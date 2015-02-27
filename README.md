@@ -1,7 +1,7 @@
 # Проект «Pink»
 
 * Студент: [Дарья Словецких](https://htmlacademy.ru/profile/id3612).
-* Наставник: `Unknown`.
+* Наставник: [Сергей Попов] (https://htmlacademy.ru/profile/id42761).
 
 --
 

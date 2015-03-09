@@ -1,0 +1,78 @@
+.main-pros {
+	background-color:  @grey-f2;
+	text-align: center;
+
+	&__header {
+		padding-top: 3*@padding-top-main;
+		padding-bottom:  3*@padding-bottom-main;
+		color: @h2-color;
+		background-color:  white;
+		font-family:  @font-family-headings;
+		font-size:  @font-size-h2;
+		font-weight:  normal;
+	}
+	
+	&__item-header {
+		padding-top: 2*@padding-top-main;
+		padding-bottom: 2*@padding-bottom-main;
+		color: @h3-color;
+		font-family:  @font-family;
+		font-size:  @font-size-h3;
+	}
+	
+	&__item-text {
+		padding: 0 @padding-right-main 0 @padding-left-main;
+		font-size:  @font-size;
+		color:  @dark-grey;
+		line-height:1.5;	
+	}
+}
+.phone-smile {
+	height:  280px;
+	overflow:  hidden;
+	margin-bottom:  0;
+	margin-top: 3*@padding-top-main;
+}
+.slider-comment {
+	background-color: white;
+	text-align: center;
+	padding-bottom: 2*@padding-bottom-main;
+
+	&__header {
+		color: @h3-color;
+		font-family:  @font-family-headings;
+		font-size:  @font-size-h3;
+		padding-top: 4*@padding-top-main;
+		padding-bottom: 2*@padding-bottom-main;
+	}
+	
+	&__text {
+		font-size:  @font-size;
+		color:  @dark-grey;
+		padding: 0 @padding-right-main 0 @padding-left-main;
+		line-height:2;	
+	}
+}
+.main-options {
+	padding-bottom: 8*@padding-bottom-main;
+	background:  url(../img/table_background_main_options-3.jpg) no-repeat;
+	text-align:left;
+	
+	&__items {
+		padding-top: 10*@padding-top-main;
+	}
+	&__items li {
+		padding: 1.5*@padding-top-main 2*@padding-left-main;
+		display:block;
+		text-transform:  uppercase;
+		color:  @dark-blue-69;
+		background:  url(../img/table_no_main_options.jpg) no-repeat 85% 50%;
+		background-color:  white;
+		border-bottom: 2px solid @grey-e5;
+		font-size:  @font-size;
+	}
+	&__items &--chosen {
+		background:  url(../img/table_yes_main_options.jpg) no-repeat 85% 50%;
+		background-color:  white;
+	}
+}

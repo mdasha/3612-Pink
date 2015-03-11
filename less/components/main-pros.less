@@ -1,8 +1,10 @@
 .main-pros {
+	background:  url(../img/i_phone_main_options.gif) no-repeat 50% 100%;
 	background-color:  @grey-f2;
 	text-align: center;
+	height:870px;
 
-	&__header {
+	&__title {
 		padding-top: 3*@padding-top-main;
 		padding-bottom:  3*@padding-bottom-main;
 		color: @h2-color;
@@ -12,7 +14,7 @@
 		font-weight:  normal;
 	}
 	
-	&__item-header {
+	&-item__title {
 		padding-top: 2*@padding-top-main;
 		padding-bottom: 2*@padding-bottom-main;
 		color: @h3-color;
@@ -20,9 +22,10 @@
 		font-size:  @font-size-h3;
 	}
 	
-	&__item-text {
+	&-item__text {
 		padding: 0 @padding-right-main 0 @padding-left-main;
 		font-size:  @font-size;
+		font-family:  @font-family;
 		color:  @dark-grey;
 		line-height:1.5;	
 	}
@@ -38,7 +41,7 @@
 	text-align: center;
 	padding-bottom: 2*@padding-bottom-main;
 
-	&__header {
+	&__title {
 		color: @h3-color;
 		font-family:  @font-family-headings;
 		font-size:  @font-size-h3;
@@ -48,20 +51,25 @@
 	
 	&__text {
 		font-size:  @font-size;
+		font-family:  @font-family;
 		color:  @dark-grey;
 		padding: 0 @padding-right-main 0 @padding-left-main;
 		line-height:2;	
+		
 	}
 }
+
 .main-options {
-	padding-bottom: 8*@padding-bottom-main;
-	background:  url(../img/table_background_main_options-3.jpg) no-repeat;
+	padding-top:  6*@padding-top-main;
+	padding-bottom: @padding-bottom-main;
+	background:  url(../img/table_background_main_options-3.jpg) no-repeat 0 6*@padding-top-main;
 	text-align:left;
+	background-color:  @grey-f2;
 	
-	&__items {
+	&__list {
 		padding-top: 10*@padding-top-main;
 	}
-	&__items li {
+	&__item {
 		padding: 1.5*@padding-top-main 2*@padding-left-main;
 		display:block;
 		text-transform:  uppercase;
@@ -70,9 +78,27 @@
 		background-color:  white;
 		border-bottom: 2px solid @grey-e5;
 		font-size:  @font-size;
+		font-family:  @font-family;
 	}
-	&__items &--chosen {
+	&__item--chosen {
 		background:  url(../img/table_yes_main_options.jpg) no-repeat 85% 50%;
 		background-color:  white;
+	}
+}
+.main-options-pagination, .slider-comment-pagination {
+	padding-top:  3*@padding-top-main;
+	padding-bottom: 3*@padding-bottom-main;
+	height:  20px;
+	text-align:  center;
+	
+	&__item {
+		display:  inline-block;
+		width:  20px;
+		height:  20px;
+		background: url(../img/slider_not_chosen.jpg) no-repeat 50% 50%;
+	}
+	
+	&__item--active {
+		background: url(../img/slider_chosen.png) no-repeat 50% 50%;
 	}
 }

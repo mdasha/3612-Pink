@@ -1,0 +1,37 @@
+.hours  {
+	display:none;
+	height:100%;
+	background:  url(../img/24_hours.png) no-repeat 40px 100%;
+	margin-top:  50px;
+}
+
+.hours-item {
+	margin-left:  350px;
+		
+	&__title {
+		font-size: 1.5*@font-size-h2;
+		padding: 2.8*@padding-top-main 5*@padding-right-main @padding-bottom-main @padding-left-main;
+		font-weight:  bold;
+	}
+			
+	&__text {
+		padding: 0 @padding-right-main 0 @padding-left-main;
+		font-size:  @font-size+3px;
+		font-family:  @font-family;
+		color:  @dark-grey;
+		line-height:1.5;
+				
+			& a {
+				dispalay:  block;
+				margin-top:  2*@padding-top-main;
+				color:  @red;
+			}
+		}
+			
+}
+	
+@media(min-width:700px) {
+	.hours  {
+		display:block;
+	}
+}

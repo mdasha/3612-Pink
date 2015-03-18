@@ -1,7 +1,7 @@
 .header-nav-wrapper {
 
-	background:  url(../img/background_header_photo.jpg) no-repeat;
-
+	background:  url(../img/background-1@1x.jpg) no-repeat 0% 0%;
+	
 	& .page-header {
 		background-color: @dark-blue-49;
 		opacity: 0.7;
@@ -18,10 +18,10 @@
 	&__logo {
 			
 		float:left;
-		width:  100px;	
+		width:  31%;	
 		
 		& p {
-			padding-left: @padding-left-main;
+			padding-left: 3.4*@padding-left-main;
 			padding-top:  @padding-top-main;
 			padding-bottom:  @padding-bottom-main;
 		}
@@ -65,10 +65,11 @@
 
 
 
-@media(min-width:700px) {
+@media(min-width:700px) and (max-width:1200px) {
 
 	.header-nav-wrapper {
-		background:  url(../img/background_header_photo.png) no-repeat;
+		background:  url(../img/background-1@2x.jpg) no-repeat;
+		background-size:cover;
 	}
 
 	.page-header {

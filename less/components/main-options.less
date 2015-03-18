@@ -2,11 +2,13 @@
 	padding-top:6*@padding-top-main;
 	padding-bottom:@padding-bottom-main;
 	background:  url(../img/table_background_main_options-3.jpg) no-repeat 0 6*@padding-top-main;
+	background-width:  100%;
 	text-align:left;
 	background-color:  @grey-f2;
 	display:  table;
+	width:  320px;
+	margin: 0 auto;
 	border-collapse:  collapse;
-	width: 100%;
 			
 		&__thead  {
 			display: table-header-group;
@@ -27,16 +29,19 @@
 				
 				&--base {
 					background:  url(../img/base.png) no-repeat;
+					background-size:  cover;
 					height:  79px;
 				}
 				
 				&--standard {
 					background:  url(../img/standard.png) no-repeat;
+					background-size:  cover;
 					height:  79px;
 				}
 				
 				&--unlim {
 					background:  url(../img/unlimited.png) no-repeat;
+					background-size:  cover;
 					height:  79px;
 				}
 		}
@@ -87,13 +92,14 @@
 }
 
 
-@media(min-width:700px) {
+@media(min-width:700px) and (max-width:1200px) {
 
 	.main-options {
 		background:  none;
 		background-color:  @grey-f2;
 		padding-top:6*@padding-top-main;
 		padding-bottom:@padding-bottom-main;
+		width:  100%;
 		
 			&__thead  {
 			

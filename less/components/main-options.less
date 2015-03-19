@@ -95,14 +95,13 @@
 @media(min-width:700px) and (max-width:1200px) {
 
 	.main-options {
-		background:  none;
 		background-color:  @grey-f2;
 		padding-top:6*@padding-top-main;
 		padding-bottom:@padding-bottom-main;
 		width:  100%;
 		
 			&__thead  {
-			
+		
 				& li:nth-child(2), & li:nth-child(3), & li:nth-child(4) {
 					display:  table-cell;
 				}
@@ -114,7 +113,7 @@
 			}
 			
 			&__item {
-				background: white  url(../img/table_no_main_options.jpg) no-repeat 50% 50%;
+				background: white  url(../img/table_no_main_options.jpg) no-repeat 50% 100%;
 				border: 2px solid @grey-e5;
 			
 				&--chosen {
@@ -147,3 +146,63 @@
 
 
 }
+
+@media(min-width:1200px) {
+
+	.main-options {
+		background-color:  @grey-f2;
+		padding-top:6*@padding-top-main;
+		padding-bottom:@padding-bottom-main;
+		width:  80%;
+		
+			&__thead  {
+			
+				display: table-header-group;
+				height: 85px;
+				
+					& li:nth-child(2), & li:nth-child(3), & li:nth-child(4) {
+						display:  table-cell;
+					}
+				
+					&--standard1 {
+						background:  none;
+						background-color:  @grey-f2;
+						height:  155px;
+					}
+			}
+			
+			&__item {
+				background: white  url(../img/table_no_main_options.jpg) no-repeat 50% 50%;
+				border: 2px solid @grey-e5;
+			
+				&--chosen {
+					background:  url(../img/table_yes_main_options.jpg) no-repeat 50% 50%;
+					background-color:  white;
+				}
+				
+				&:first-child {
+					background:  none;
+					background-color:  white;
+					width:168px;
+					text-align:  left;
+					padding: 20px  20px;
+					text-transform:  none;
+					font-size:  18px;
+					font-family:  @font-family;
+				}
+				
+				&:nth-child(2), &:nth-child(3), &:nth-child(4) {
+					display:  table-cell;
+				}
+				
+			}
+			
+	}
+	
+	.main-options-pagination {
+		display:  none;
+	}
+
+
+}
+

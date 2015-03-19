@@ -1,8 +1,6 @@
 .hours  {
 	display:none;
-	height:100%;
-	background:  url(../img/24_hours.png) no-repeat 10% 100%;
-	margin-top:  6%;
+
 }
 
 .hours-item {
@@ -30,8 +28,48 @@
 			
 }
 	
-@media(min-width:700px) {
+@media(min-width:700px) and (max-width:1200px) {
 	.hours  {
 		display:block;
+		height:100%;
+		background:url(../img/24_hours.png) no-repeat 10% 100%;
+		margin-top:  6%;
+	}
+}
+
+@media(min-width:1200px) {
+
+	.hours  {
+		display:block;
+		height:100%;
+		background:  url(../img/24_hours_1200.png) no-repeat 10% 100%-10*@padding-bottom-main;
+		background-color:  @grey-f2;
+		padding-top:  5%;
+	}
+	
+	.hours-item {
+	margin-left:  350px;
+		
+	&__title {
+		font-size: 36px;
+		padding: 3*@padding-top-main 5*@padding-right-main 3*@padding-bottom-main 2*@padding-left-main;
+		font-weight:  bold;
+	}
+		&__text {
+		padding: 0 @padding-right-main  10*@padding-bottom-main  2*@padding-left-main;
+		font-size:  18px;
+		font-family:  @font-family;
+		color:  @dark-grey;
+		line-height:1.5;
+		dispalay:  block;
+		width: 45%;
+				
+			& a {
+				dispalay:  block;
+				margin-top:  3*@padding-top-main;
+				color:  @red;
+			}
+		}
+	
 	}
 }

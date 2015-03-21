@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Pink</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="octicons/octicons.css">
+   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 </head>
 
 <body>
@@ -28,7 +30,7 @@
 
 
 		<div class="download">
-			<h1 class="download__title">Взгляните на жизнь иначе!</h1>
+			<h1 class="download__title">Взгляните на жизнь иначе! </h1>
 
 				<div class="download__button">
 					<a href="#">Скачать приложение</a>
@@ -66,7 +68,7 @@
 
 	<div class="hours">
 		<div class="hours-item">
-			<p class="hours-item__title">Эффект на 24 часа!</p>
+			<p class="hours-item__title">Эффект<span class="hours-item__title--pre"> на 24 часа!</span></p>
 				<p class="hours-item__text">
 					Британские ученые провели исследования и доказали, 
 					что положительный эффект от использования приложения
@@ -81,15 +83,22 @@
 			
 			<div class="slider-comment">
 				<div class="slider-comment__item">
+				
 					<div>
 						<h3 class="slider-comment__title">Николай Петров</h3>
 							<p class="slider-comment__about">25 лет, водитель трамвая</p>
 					</div>
 					
-					<div>
-						<p class="slider-comment__text">"Это приложение перевернуло мой мир и позволило по-новому
-							взглянуть на привычные серые вещи! А еще я познакомился со 
-							своей будущей женой в комментариях к выложенной фотографии!"</p>
+					<div><span class="mega-octicon octicon-quote"></span>
+						<p class="slider-comment__text">
+							
+							<span class="slider-comment__text--decoration mega-octicon octicon-chevron-left"></span>
+							<span class="slider-comment__text--decoration  mega-octicon octicon-chevron-right"></span>
+								"Это приложение перевернуло мой мир и позволило по-новому
+								взглянуть на привычные серые вещи! А еще я познакомился со 
+								своей будущей женой в комментариях к выложенной фотографии!"
+							
+						</p>
 					</div>
 				</div>
 				
@@ -116,10 +125,10 @@
 			
 				
 				<ul class="main-options__thead">
-					<li class="main-options__thead--standard1"></li>
-					<li class="main-options__thead--base"></li>
-					<li class="main-options__thead--standard"></li>
-					<li class="main-options__thead--unlim"></li>
+					<li class="main-options__thead--standard1">Стандарт<span class="main-options-price">3,99 usd</span><span class="main-options__thead--hit">хит</span></li>
+					<li class="main-options__thead--base">База<span class="main-options-price">1,99 usd</span></li>
+					<li class="main-options__thead--standard">Стандарт<span class="main-options-price">3,99 usd</span><span class="main-options__thead--hit">хит</span></li>
+					<li class="main-options__thead--unlim">Анлим<span class="main-options-price">9,99 usd</span></li>
 				</ul>
 				
 				<ul class="main-options__list">
@@ -174,7 +183,7 @@
 	</div>
 
 	<footer class="page-footer">
-
+		<div class="map" id="map_canvas"></div>
 		<div class="page-footer-information">
 			
 			<div class="page-footer__logo">
@@ -201,8 +210,7 @@
 	</footer>
 </div> 
   
-  
-  <!-- <script src="js/script.js"></script> -->
 
+ <script src="js/google_map.js"></script> 
 </body>
 </html>

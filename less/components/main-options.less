@@ -12,35 +12,61 @@
 			
 		&__thead  {
 			display: table-header-group;
-			height:  79px;
+			height:  91px;
 				
 				& li {
-				display:  table-cell;
+					display:  table-cell;
+					color:  white;
+					font-weight:  bold;
+					font-size:  18px;
+					text-transform:  uppercase;
+					text-align:  center;
+					vertical-align: middle;
+					overflow:  hidden;
+					
+						.main-options-price {
+							display:block;
+							font-weight: normal;
+							font-size:  24px;
+							padding-top:  5px;
+							}
 				}
+				
+				&--hit {
+						font-size: 14px;
+						display:  block;
+						width:  120px;
+						height:  23px;
+						padding-top:  7px;
+						background:  #d22856;
+						transform: rotate(-50deg) translate(25px, -62px);	
+					}
 				
 				& li:nth-child(2), & li:nth-child(3), & li:nth-child(4) {
 					display:  none;
 				}
 				
 				&--standard1 {
-					background:  url(../img/table_background_main_options-3.jpg) no-repeat;
-					height:  79px;
+					background-color: @dark-blue-69;
+					height:  45px;
+					padding-top:  25px !important;
 				}
 				
 				&--base {
-					background:  url(../img/base.png) no-repeat;
+					background-color: @dark-blue-69;
 					background-size:  cover;
 					height:  79px;
 				}
 				
 				&--standard {
-					background:  url(../img/standard.png) no-repeat;
+					background-color: @dark-blue-69;
 					background-size:  cover;
 					height:  79px;
+					
 				}
 				
 				&--unlim {
-					background:  url(../img/unlimited.png) no-repeat;
+					background-color: @dark-blue-69;
 					background-size:  cover;
 					height:  79px;
 				}
@@ -92,7 +118,7 @@
 }
 
 
-@media(min-width:700px) and (max-width:1200px) {
+@media(min-width:481px) and (max-width:1200px) {
 
 	.main-options {
 		background-color:  @grey-f2;
@@ -101,6 +127,38 @@
 		width:  100%;
 		
 			&__thead  {
+			
+				li {
+		
+					font-weight:  bold;
+					font-size:  16px;
+					text-transform:  uppercase;
+					text-align:  center;
+					vertical-align: middle;
+					border-right: 2px solid @grey-e5;
+					overflow:  hidden;
+						
+						.main-options-price {
+							display:block;
+							font-weight: normal;
+							font-size:  18px;
+							padding-top:  5px;
+						}
+				}
+				
+				&--standard {
+					padding-top:  30px;
+				}
+				
+				&--hit {
+						font-size: 14px;
+						display:  block;
+						width:  120px;
+						height:  23px;
+						padding-top:  7px;
+						background:  #d22856;
+						transform: rotate(-45deg) translate(20px, -77px);	
+				}
 		
 				& li:nth-child(2), & li:nth-child(3), & li:nth-child(4) {
 					display:  table-cell;
@@ -109,6 +167,12 @@
 				&--standard1 {
 					background:  none;
 					background-color:  @grey-f2;
+					color:  @grey-f2 !important;;
+					
+					&  .main-options__thead--hit {
+						background:  @grey-f2;
+						color:  @grey-f2;
+					}
 				}
 			}
 			
@@ -128,7 +192,7 @@
 					text-align:  left;
 					padding: 20px  20px;
 					text-transform:  none;
-					font-size:  @font-size+3px;
+					font-size:  14px;
 					font-family:  @font-family;
 				}
 				
@@ -160,14 +224,48 @@
 				display: table-header-group;
 				height: 85px;
 				
+					& li {
+						font-weight:  bold;
+						font-size:  18px;
+						text-transform:  uppercase;
+						text-align:  center;
+						vertical-align: middle;
+						border-right: 2px solid @grey-e5;
+						overflow:  hidden;
+						
+							.main-options-price {
+								display:block;
+								font-weight: normal;
+								font-size:  24px;
+								padding-top:  5px;
+							}
+					}
 					& li:nth-child(2), & li:nth-child(3), & li:nth-child(4) {
 						display:  table-cell;
 					}
-				
+					
+					&--hit {
+						font-size: 14px;
+						display:  block;
+						width:  120px;
+						height:  23px;
+						padding-top:  7px;
+						background:  #d22856;
+						transform: rotate(-45deg) translate(30px, -70px);	
+					}
+					&--standard {
+						padding-top:  30px;
+					}
 					&--standard1 {
 						background:  none;
 						background-color:  @grey-f2;
-						height:  155px;
+						color:  @grey-f2 !important;
+						height:  100px;
+						
+						&  .main-options__thead--hit {
+							background:  @grey-f2;
+							color:  @grey-f2;
+						}
 					}
 			}
 			

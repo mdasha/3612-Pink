@@ -3,26 +3,7 @@
 	background-size:  cover;
 	height: 204px;
 	
-	&-triangle {
-		padding: 20px;
-		position: relative;
-		color: #fff;
-	
-		&:after, &:before {
-			content: '';
-			position: absolute;
-			background: white;
-			left: 0px; bottom: 100px;
-			width: 300px; height: 300px;
-			z-index: -1; /* Прячем за основным блоком */
-			transform:rotate(156deg) skew(50deg) translate(-10px, 100px) scale(1.1); /* Поворачиваем на 45? */
 
-		}
-		&:before {
-			z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
-			box-shadow: none; /* Прячем тень */
-		}
-	}
 	
 	&-information {
 		display:  none;

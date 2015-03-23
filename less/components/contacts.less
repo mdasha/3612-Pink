@@ -1,6 +1,20 @@
 .contacts {
 	background-color:  white;
 	text-align: center;
+	
+	& a {
+		color:  @red;
+		text-decoration:  none;
+		
+			&:hover {
+				text-decoration:  underline;
+				color:  @dark-blue-69;
+			}
+			&:active {
+				text-decoration:  none;
+				color:  @grey-b2;
+			}
+	}
 
 	&__title {
 		padding:   3*@padding-top-main 15% 2*@padding-bottom-main 15%;

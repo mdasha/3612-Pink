@@ -3,6 +3,27 @@
 	background-size:  cover;
 	height: 204px;
 	
+	&-triangle {
+		padding: 20px;
+		position: relative;
+		color: #fff;
+	
+		&:after, &:before {
+			content: '';
+			position: absolute;
+			background: white;
+			left: 0px; bottom: 100px;
+			width: 300px; height: 300px;
+			z-index: -1; /* Прячем за основным блоком */
+			transform:rotate(156deg) skew(50deg) translate(-10px, 100px) scale(1.1); /* Поворачиваем на 45? */
+
+		}
+		&:before {
+			z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
+			box-shadow: none; /* Прячем тень */
+		}
+	}
+	
 	&-information {
 		display:  none;
 	}
@@ -27,7 +48,29 @@
 		width: 200px;
 
 			&__item {
-				display:  inline-block;
+				display:  inline-block; 
+				padding: 5px;
+				border: 2px solid @grey-f2;
+				border-radius: 30px; 
+			
+				&:hover {
+					border: 2px solid black;
+				}	
+
+				&:active {
+					border: 2px solid @grey-f2;
+				}
+				
+				& a img {
+				padding:  8px;		
+				height:  15px;
+				width: 15px;
+				display:block;
+				
+					&:active {
+						opacity: 0.5;
+					}
+				}
 			}
 	}
 	
@@ -41,11 +84,27 @@
 				height:  100%;
 				
 				&:nth-child(1) {
-					background:  url(../img/webstudio.png) no-repeat 100%  80%;
+					background:  url(../img/glukhanko.svg) no-repeat 100%  80%; 
+				
+					&:hover {
+						background:  url(../img/glukhanko-hover.svg) no-repeat 100%  80%;
+					}
+					&:active {
+						background:  url(../img/glukhanko-active.svg) no-repeat 100%  80%;
+				}
+				
 				}
 				
 				&:nth-child(2) {
-					background:  url(../img/website_for.png) no-repeat  100% 90%;
+					background:  url(../img/htmlacademy.svg) no-repeat  100% 90%;
+				
+					&:hover {
+						background:  url(../img/htmlacademy-hover.svg) no-repeat  100% 90%;
+					}
+				
+					&:active {
+						background:  url(../img/htmlacademy-active.svg) no-repeat  100% 90%;
+					}
 				}
 				
 				& a {
@@ -146,6 +205,8 @@ background:  #999;
 
 	.page-footer {
 		margin-top:0;
+		
+
 		
 		&-information {
 			padding-top:  25px;

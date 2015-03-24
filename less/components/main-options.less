@@ -110,9 +110,13 @@
 		width:  20px;
 		height:  20px;
 		background: url(../img/slider_not_chosen.jpg) no-repeat 50% 50%;
+		
+			&:hover {
+				background: url(../img/slider_not_chosen_hover.png) no-repeat 50% 50%;
+			}
 	}
 	
-	&__item--active {
+	&__item--active, &__item--active:hover {
 		background: url(../img/slider_chosen.png) no-repeat 50% 50%;
 	}
 }

@@ -165,10 +165,21 @@ background:  #999;
 			a {
 				padding-left:  70px;
 				padding-top:  0;
-				background:  url(../img/Pink-logo-footer-2@1x.png) no-repeat 0% 0%;	 
+				background:  url(../img/glasses-red@1x.png) no-repeat,
+				url(../img/logo-2-footer.svg) no-repeat 55% 50%;	 
 				display:  block;
 				width:  145px;
 				height:  40px;
+				
+				&:hover {
+					background:  url(../img/glasses-blue@1x.png) no-repeat,
+					url(../img/logo-2-footer.svg) no-repeat 55% 50%;	 
+				}
+				
+				&:active  {
+					background:  url(../img/glasses-light-grey@1x.png) no-repeat,
+					url(../img/logo-2-footer-active.svg) no-repeat 55% 50%;	
+				}
 			}
 		
 		}
@@ -211,7 +222,21 @@ background:  #999;
 				display:  block;
 				height:  100px;
 				width:  80px;
-				background:  url(../img/Pink-logo-footer-3@1x.png) no-repeat;			
+				background: url(../img/red-blue-stars-3@1x.png) no-repeat 30% 0%,
+				url(../img/glasses-red@1x.png) no-repeat, 
+				url(../img/logo-2-footer.svg) no-repeat 100% 15%;	
+
+				&:hover {
+				background: url(../img/red-blue-stars-3@1x.png) no-repeat 30% 0%,
+				url(../img/glasses-blue@1x.png) no-repeat, 
+				url(../img/logo-2-footer.svg) no-repeat 100% 15%;
+				}
+				
+				&:active {
+				background: url(../img/red-blue-stars-3@1x.png) no-repeat 30% 0%,
+				url(../img/glasses-light-grey@1x.png) no-repeat, 
+				url(../img/logo-2-footer-active.svg) no-repeat 100% 15%;
+				}
 			}
 		}
 		&-production {

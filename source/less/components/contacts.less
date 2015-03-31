@@ -1,0 +1,143 @@
+.contacts {
+  background-color: white;
+  text-align: center;
+
+  & a {
+    color: @red;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: @dark-blue-69;
+    }
+    &:active {
+      text-decoration: none;
+      color: @grey-b2;
+    }
+  }
+
+  &__title {
+    padding: 3*@padding-top-main 15% 2*@padding-bottom-main 15%;
+    color: @h2-color;
+    font-family: @font-family-headings;
+    font-size: @font-size-h2;
+    font-weight: normal;
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &-item {
+    display: block;
+    width: 310px;
+    margin: 0 auto;
+
+    &__title {
+      color: @h3-color;
+      font-family: @font-family;
+      font-size: @font-size-h3;
+      padding-top: 2*@padding-top-main;
+    }
+    &__text {
+      font-family: @font-family;
+      font-size: @font-size-h2;
+      color: @red;
+      padding: 0 @padding-right-main 0 @padding-left-main;
+      font-weight: normal;
+    }
+  }
+}
+
+
+@media(min-width:480px) and (max-width:1200px) {
+  .contacts {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+
+    &__title {
+      font-size: 40px;
+      padding: 5*@padding-top-main 0 @padding-bottom-main 0;
+      text-align: center;
+      display: block;
+      width: 500px;
+    }
+
+    &-item {
+      display: inline-block;
+      vertical-align: top;
+      padding-bottom: 30px;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 auto;
+
+
+      &:nth-child(2) {
+        float: left;
+        width: 45%;
+        max-width: 220px;
+      }
+
+      &:nth-child(1) {
+        float: right;
+        width: 35%;
+        max-width: 220px;
+      }
+
+      &:nth-child(3) {
+        float: right;
+        width: 45%;
+        max-width: 220px;
+      }
+
+
+      &__title {
+        font-family: @font-family;
+        font-size: @font-size-h3+4px;
+      }
+    }
+  }
+}
+
+@media(min-width:1200px) {
+  .contacts {
+    padding-bottom: 20px;
+
+    &__title {
+      font-size: 50px;
+      padding: 2*@padding-top-main 25% @padding-bottom-main 25%;
+      text-align: center;
+      display: block;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    &-item {
+      padding-top: 20px;
+      padding-right: 70px;
+
+      &:nth-child(2) {
+        float: left;
+        width: 30%;
+      }
+
+      &:nth-child(3) {
+        float: right;
+        width: 30%;
+      }
+
+      &__title {
+        font-family: @font-family;
+        font-size: 18px;
+        padding-bottom: 20px;
+      }
+
+      &__text {
+        font-family: @font-family;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+
+
